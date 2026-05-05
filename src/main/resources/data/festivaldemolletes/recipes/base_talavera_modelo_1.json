@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["A  ", " B ", "  A"],
+  "key": {
+    "A": { "item": "minecraft:blue_dye" },
+    "B": { "item": "festivaldemolletes:base_talavera_vacia" }
+  },
+  "result": { "item": "festivaldemolletes:base_talavera_modelo_1" }
+}

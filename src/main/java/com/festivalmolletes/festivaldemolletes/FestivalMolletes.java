@@ -44,6 +44,29 @@ public class FestivalMolletes
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "festivaldemolletes" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
+    //Materiales para talavera
+    public static final RegistryObject<Item> BASE_BARRO = ITEMS.register("base_barro",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> BASE_TALAVERA_VACIA = ITEMS.register("base_talavera_vacia",
+            () -> new Item(new Item.Properties()));
+
+    // Ítem del diseño (antes de meter al horno)
+    public static final RegistryObject<Item> BASE_TALAVERA_MODELO_1 = ITEMS.register("base_talavera_modelo_1",
+            () -> new Item(new Item.Properties()));
+
+    // --- BLOQUES ---
+    // El bloque final ya cocido
+    public static final RegistryObject<Block> TALAVERA_MODELO_1 = BLOCKS.register("talavera_modelo_1",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.LAPIS)
+                    .strength(2.0f)
+                    .requiresCorrectToolForDrops()));
+
+    // El ítem del bloque para el inventario (debe llamarse igual que el bloque)
+    public static final RegistryObject<Item> TALAVERA_MODELO_1_ITEM = ITEMS.register("talavera_modelo_1",
+            () -> new BlockItem(TALAVERA_MODELO_1.get(), new Item.Properties()));
+
     // Registro del Mollete
     // Nutrición 8 (4 muslitos), Saturación 0.8f (como un filete)
     public static final RegistryObject<Item> MOLLETE = ITEMS.register("mollete",

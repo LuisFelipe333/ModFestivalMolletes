@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "festivaldemolletes:base_talavera_modelo_1" },
+  "result": "festivaldemolletes:talavera_modelo_1",
+  "experience": 0.5,
+  "cookingtime": 200
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["AAA", "TTT"],
+  "key": {
+    "A": { "item": "minecraft:clay_ball" },
+    "T": { "item": "minecraft:dirt" }
+  },
+  "result": { "item": "festivaldemolletes:base_barro", "count": 3 }
+}
