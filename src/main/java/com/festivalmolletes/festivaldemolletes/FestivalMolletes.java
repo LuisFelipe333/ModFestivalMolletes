@@ -48,7 +48,7 @@ public class FestivalMolletes
     // Nutrición 8 (4 muslitos), Saturación 0.8f (como un filete)
     public static final RegistryObject<Item> MOLLETE = ITEMS.register("mollete",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-                    .nutrition(10)
+                    .nutrition(8)
                     .saturationMod(0.8f)
                     .build())));
 
