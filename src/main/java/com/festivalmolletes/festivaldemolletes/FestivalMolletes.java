@@ -67,6 +67,59 @@ public class FestivalMolletes
     public static final RegistryObject<Item> TALAVERA_MODELO_1_ITEM = ITEMS.register("talavera_modelo_1",
             () -> new BlockItem(TALAVERA_MODELO_1.get(), new Item.Properties()));
 
+    // Ítem del diseño (antes de meter al horno)
+    public static final RegistryObject<Item> BASE_TALAVERA_MODELO_2 = ITEMS.register("base_talavera_modelo_2",
+            () -> new Item(new Item.Properties()));
+
+    // --- BLOQUES ---
+    // El bloque final ya cocido
+    public static final RegistryObject<Block> TALAVERA_MODELO_2 = BLOCKS.register("talavera_modelo_2",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.LAPIS)
+                    .strength(2.0f)
+                    .requiresCorrectToolForDrops()));
+
+    // El ítem del bloque para el inventario (debe llamarse igual que el bloque)
+    public static final RegistryObject<Item> TALAVERA_MODELO_2_ITEM = ITEMS.register("talavera_modelo_2",
+            () -> new BlockItem(TALAVERA_MODELO_2.get(), new Item.Properties()));
+
+
+
+    // Ítem del diseño (antes de meter al horno)
+    public static final RegistryObject<Item> BASE_TALAVERA_MODELO_3 = ITEMS.register("base_talavera_modelo_3",
+            () -> new Item(new Item.Properties()));
+
+    // --- BLOQUES ---
+    // El bloque final ya cocido
+    public static final RegistryObject<Block> TALAVERA_MODELO_3 = BLOCKS.register("talavera_modelo_3",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.LAPIS)
+                    .strength(2.0f)
+                    .requiresCorrectToolForDrops()));
+
+    // El ítem del bloque para el inventario (debe llamarse igual que el bloque)
+    public static final RegistryObject<Item> TALAVERA_MODELO_3_ITEM = ITEMS.register("talavera_modelo_3",
+            () -> new BlockItem(TALAVERA_MODELO_3.get(), new Item.Properties()));
+
+
+    // Ítem del diseño (antes de meter al horno)
+    public static final RegistryObject<Item> BASE_TALAVERA_MODELO_4 = ITEMS.register("base_talavera_modelo_4",
+            () -> new Item(new Item.Properties()));
+
+    // --- BLOQUES ---
+    // El bloque final ya cocido
+    public static final RegistryObject<Block> TALAVERA_MODELO_4 = BLOCKS.register("talavera_modelo_4",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.LAPIS)
+                    .strength(2.0f)
+                    .requiresCorrectToolForDrops()));
+
+    // El ítem del bloque para el inventario (debe llamarse igual que el bloque)
+    public static final RegistryObject<Item> TALAVERA_MODELO_4_ITEM = ITEMS.register("talavera_modelo_4",
+            () -> new BlockItem(TALAVERA_MODELO_4.get(), new Item.Properties()));
+
+
+
     // Registro del Mollete
     // Nutrición 8 (4 muslitos), Saturación 0.8f (como un filete)
     public static final RegistryObject<Item> MOLLETE = ITEMS.register("mollete",
@@ -75,18 +128,30 @@ public class FestivalMolletes
                     .saturationMod(0.8f)
                     .build())));
 
+    // TAB CREATIVO ACTUALIZADA
     public static final RegistryObject<CreativeModeTab> MOLLETE_TAB =
             CREATIVE_MODE_TABS.register("mollete_tab", () -> CreativeModeTab.builder()
-                    // Icono de la pestaña
                     .icon(() -> MOLLETE.get().getDefaultInstance())
-                    // Título de la pestaña (va por lang)
-                    .title(Component.translatable("item." + MODID + ".mollete_tab"))
-                    // Items que salen en la pestaña
+                    .title(Component.translatable("itemGroup." + MODID + ".mollete_tab"))
                     .displayItems((parameters, output) -> {
+                        // Primero la comida
                         output.accept(MOLLETE.get());
+
+                        // Proceso de Talavera (Orden lógico)
+                        output.accept(BASE_BARRO.get());
+                        output.accept(BASE_TALAVERA_VACIA.get());
+                        output.accept(BASE_TALAVERA_MODELO_1.get());
+                        output.accept(BASE_TALAVERA_MODELO_2.get());
+                        output.accept(BASE_TALAVERA_MODELO_3.get());
+                        output.accept(BASE_TALAVERA_MODELO_4.get());
+
+                        // El bloque final (usamos el RegistryObject del bloque)
+                        output.accept(TALAVERA_MODELO_1.get());
+                        output.accept(TALAVERA_MODELO_2.get());
+                        output.accept(TALAVERA_MODELO_3.get());
+                        output.accept(TALAVERA_MODELO_4.get());
                     })
                     .build());
-
     public FestivalMolletes(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
