@@ -1,4 +1,15 @@
 {
   "item.festivaldemolletes.mollete": "Mollete",
-  "item.festivaldemolletes.mollete_tab": "Molletes festival"
+  "itemGroup.festivaldemolletes.mollete_tab": "Molletes festival",
+  "item.festivaldemolletes.base_barro": "Mud Base",
+  "item.festivaldemolletes.base_talavera_vacia": "Empty Talavera Base",
+  "item.festivaldemolletes.base_talavera_modelo_1": "Talavera Base Model 1",
+  "item.festivaldemolletes.base_talavera_modelo_2": "Talavera Base Model 2",
+  "item.festivaldemolletes.base_talavera_modelo_3": "Talavera Base Model 3",
+  "item.festivaldemolletes.base_talavera_modelo_4": "Talavera Base Model 4",
+  "block.festivaldemolletes.talavera_modelo_1": "Talavera Model 1",
+  "block.festivaldemolletes.talavera_modelo_2": "Talavera Model 2",
+  "block.festivaldemolletes.talavera_modelo_3": "Talavera Model 3",
+  "block.festivaldemolletes.talavera_modelo_4": "Talavera Model 4",
+  "item.festivaldemolletes.mollete_tocino": "Mollete with Bacon"
 }

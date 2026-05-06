@@ -1,4 +1,15 @@
 {
   "item.festivaldemolletes.mollete": "Mollete",
-  "item.festivaldemolletes.mollete_tab": "Festival de Molletes"
+  "itemGroup.festivaldemolletes.mollete_tab": "Festival de Molletes",
+  "item.festivaldemolletes.base_barro": "Base Barro",
+  "item.festivaldemolletes.base_talavera_vacia": "Base Talavera Vacia",
+  "item.festivaldemolletes.base_talavera_modelo_1": "Base Talavera Modelo 1",
+  "item.festivaldemolletes.base_talavera_modelo_2": "Base Talavera Modelo 2",
+  "item.festivaldemolletes.base_talavera_modelo_3": "Base Talavera Modelo 3",
+  "item.festivaldemolletes.base_talavera_modelo_4": "Base Talavera Modelo 4",
+  "block.festivaldemolletes.talavera_modelo_1": "Talavera Modelo 1",
+  "block.festivaldemolletes.talavera_modelo_2": "Talavera Modelo 2",
+  "block.festivaldemolletes.talavera_modelo_3": "Talavera Modelo 3",
+  "block.festivaldemolletes.talavera_modelo_4": "Talavera Modelo 4",
+  "item.festivaldemolletes.mollete_tocino": "Mollete con Tocino"
 }

@@ -121,11 +121,18 @@ public class FestivalMolletes
 
 
     // Registro del Mollete
-    // Nutrición 8 (4 muslitos), Saturación 0.8f (como un filete)
+    // Nutrición 8 (4 muslitos), Saturación 0.8f
     public static final RegistryObject<Item> MOLLETE = ITEMS.register("mollete",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(8)
                     .saturationMod(0.8f)
+                    .build())));
+
+    // Registro del Mollete con Tocino
+    public static final RegistryObject<Item> MOLLETE_TOCINO = ITEMS.register("mollete_tocino",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(10)
+                    .saturationMod(1.0f)
                     .build())));
 
     // TAB CREATIVO ACTUALIZADA
@@ -136,6 +143,7 @@ public class FestivalMolletes
                     .displayItems((parameters, output) -> {
                         // Primero la comida
                         output.accept(MOLLETE.get());
+                        output.accept(MOLLETE_TOCINO.get());
 
                         // Proceso de Talavera (Orden lógico)
                         output.accept(BASE_BARRO.get());

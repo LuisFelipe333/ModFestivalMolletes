@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "pamhc2foodcore:cheeseitem" },
+    { "item": "pamhc2crops:beanitem" },
+    { "item": "minecraft:bread" },
+    { "item": "minecraft:porkchop" }
+  ],
+  "result": {
+    "item": "festivaldemolletes:mollete_tocino",
+    "count": 2
+  }
+}
