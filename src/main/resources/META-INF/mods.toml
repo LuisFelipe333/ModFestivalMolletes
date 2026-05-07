@@ -66,6 +66,22 @@ description='''${mod_description}'''
     ordering="NONE"
     side="BOTH"
 
+# Dependencia obligatoria de Pam's Food Core
+[[dependencies.festivaldemolletes]]
+modId="pamhc2foodcore"
+mandatory=true
+versionRange="[1.0.0,)"
+ordering="AFTER"
+side="BOTH"
+
+# Dependencia obligatoria de Pam's Crops
+[[dependencies.festivaldemolletes]]
+modId="pamhc2crops"
+mandatory=true
+versionRange="[1.0.0,)"
+ordering="AFTER"
+side="BOTH"
+
 # Features are specific properties of the game environment, that you may want to declare you require. This festivalmolletes declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
 # stop your mod loading on the server for festivalmolletes.
